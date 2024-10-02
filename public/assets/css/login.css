@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+body {
+    font-family: "Poppins", sans-serif;
+    background: white;
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+} 
+/*------------ Login container ------------*/
+.box-area {
+    width: 930px;
+}
+/*------------ Right box ------------*/
+.right-box {
+    padding: 50px 40px 50px 50px;
+}
+/*------------ Custom Placeholder ------------*/
+::placeholder {
+    font-size: 16px;
+}
+.rounded-4 {
+    border-radius: 20px;
+}
+.rounded-5 {
+    border-radius: 30px;
+}
+.btn-primary {
+    background-color: #0066cc;
+    color: white;
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+.btn-primary:hover{
+    background-color: darkblue;
+    color: white;
+}
+.error-message {
+    color: red; /* Style for error message */
+    font-size: 16px;
+}
+.btn-custom {
+    background-color: green;
+    width: 100%; /* Make button full width */
+    color: white;
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+.btn-custom:hover {
+    background-color: darkgreen; /* Darker green on hover */
+    color: white;
+}
+.admin-link {
+    color: green;
+    display: block; /* Make link a block element */
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Space between user button and admin link */
+    transition: color 0.3s; /* Smooth transition for hover */
+    text-decoration: none;
+}
+.admin-link:hover {
+    color: blue; /* Darker color on hover */
+    text-decoration: underline;
+}
+
+/*------------ For small screens------------*/
+@media only screen and (max-width: 768px) {
+    .box-area {
+        margin: 0 10px;
+    }
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+    .right-box {
+        padding: 20px;
+    }
+}
